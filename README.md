@@ -6,9 +6,9 @@ L"étudiant abordera les notions suivantes:
 - Classes/Objets/attributs/méthodes/constructeurs
   - Notion d’héritage, agrégation
   - Format et description de données (affichage, expr. textuelle pour un json/yaml/xml, date avec timezone, retour sur l’encodage)
--Sérialisation des objets (texte versus binaire)
+- Sérialisation des objets (texte versus binaire)
 - Gestion des erreurs/exceptions
-- 
+
 ## Prolongements possibles
 - Les interfaces, classes abstraites, polymorphisme
 - Structures de données avancées comme par exemple listes, files, piles, arbres, etc.
