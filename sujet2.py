@@ -41,14 +41,35 @@ class Promotion:
     def nbre_etudiants(self):
         return len(self.__etudiants)
     
+    def moyenne_prom(self):
+        somme = 0
+        for etudiant in self.__etudiants:
+            somme += etudiant.moyenne()
+        return somme / len(self.__etudiants)
 
 def main_etudiant():
     etudiant1 = Etudiant("akhal", "mohamad")
     etudiant1.ajouter_note(20,1)
-    etudiant1.ajouter_note(0,1)
+    etudiant1.ajouter_note(10,1)
     etudiant1.afficher()
     etudiant1.nbNotes()
     print(etudiant1.moyenne())
 
-def main_promo():
+def main_test_promo():
+    etudiant1 = Etudiant("akhal", "mohamad")
+    etudiant1.ajouter_note(20,1)
+    # etudiant1.ajouter_note(0,1)
+    
+    etudiant2 = Etudiant("toto", "martin")
+    etudiant2.ajouter_note(20,1)
+    # etudiant2.ajouter_note(20,1)
+    promo = Promotion("promo1")
+    
+    promo.ajouter_etudiant(etudiant1)
+    promo.ajouter_etudiant(etudiant2)
+    print(promo.nbre_etudiants())
+    print(promo.moyenne_prom())
+    
+main_etudiant()
+    
     
