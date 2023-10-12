@@ -56,8 +56,8 @@ class Contexte:
 
 
 contexte = Contexte()
-contexte.associer_variable('x', 5)
-contexte.associer_variable('y', 3)
+contexte.associer_variable('x', 12)
+contexte.associer_variable('y', 4)
 
 exp = Plus(Constante(2), Multiplier(Variable('x'), Variable('y')))
 resultat = exp.evaluer(contexte)
